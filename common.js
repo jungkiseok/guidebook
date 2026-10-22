@@ -1,4 +1,18 @@
 (() => {
+  const logout = document.querySelector('.logout-button');
+  logout?.addEventListener('click', () => {
+    try { sessionStorage.removeItem('jaseng-guide-session'); } catch {}
+    window.location.replace('login.html');
+  });
+  window.addEventListener('pageshow', event => {
+    if (!event.persisted) return;
+    let signedIn = false;
+    try { signedIn = sessionStorage.getItem('jaseng-guide-session') === 'signed-in-v1'; } catch {}
+    if (!signedIn) {
+      document.documentElement.style.visibility = 'hidden';
+      window.location.replace('login.html');
+    }
+  });
   const sidebar = document.getElementById('sidebar');
   const opener = document.getElementById('menu-open');
   const closer = document.getElementById('menu-close');

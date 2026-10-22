@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#002575">
+  <title>로그인 · 자생 가이드북</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="login.js" defer></script>
+</head>
+<body class="login-page">
+  <main class="login-panel">
+    <img class="login-logo" src="assets/logo.svg" width="234" height="55" alt="자생한방병원">
+    <p class="login-eyebrow">입사자 가이드</p>
+    <h1>자생 가이드북</h1>
+    <p class="login-intro">사번과 비밀번호를 입력해 주세요.</p>
+    <form id="login-form">
+      <div class="login-field"><label for="employee-id">사번</label><input id="employee-id" name="username" type="text" autocomplete="username" autocapitalize="off" spellcheck="false" required placeholder="사번 입력"></div>
+      <div class="login-field"><label for="password">비밀번호</label><input id="password" name="password" type="password" autocomplete="current-password" required placeholder="비밀번호 입력"></div>
+      <p id="login-error" class="login-error" role="alert" aria-live="polite"></p>
+      <button class="login-submit" type="submit">로그인</button>
+    </form>
+  </main>
+</body>
+</html>
