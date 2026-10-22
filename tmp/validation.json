@@ -1,0 +1,164 @@
+{
+  "pages": 30,
+  "errors": [],
+  "checks": [
+    "relative paths",
+    "all links and anchors",
+    "image files and alt text",
+    "one H1",
+    "active topic",
+    "checklist groups and unselected defaults"
+  ],
+  "detail": [
+    {
+      "file": "academy.html",
+      "images": 8,
+      "radio_inputs": 0
+    },
+    {
+      "file": "biocenter.html",
+      "images": 18,
+      "radio_inputs": 0
+    },
+    {
+      "file": "burden.html",
+      "images": 1,
+      "radio_inputs": 0
+    },
+    {
+      "file": "chuna.html",
+      "images": 6,
+      "radio_inputs": 0
+    },
+    {
+      "file": "conversation.html",
+      "images": 2,
+      "radio_inputs": 0
+    },
+    {
+      "file": "doing.html",
+      "images": 1,
+      "radio_inputs": 0
+    },
+    {
+      "file": "email.html",
+      "images": 2,
+      "radio_inputs": 0
+    },
+    {
+      "file": "fingers.html",
+      "images": 1,
+      "radio_inputs": 0
+    },
+    {
+      "file": "foundation.html",
+      "images": 14,
+      "radio_inputs": 0
+    },
+    {
+      "file": "give.html",
+      "images": 1,
+      "radio_inputs": 0
+    },
+    {
+      "file": "greeting.html",
+      "images": 2,
+      "radio_inputs": 0
+    },
+    {
+      "file": "herbal.html",
+      "images": 6,
+      "radio_inputs": 0
+    },
+    {
+      "file": "history.html",
+      "images": 13,
+      "radio_inputs": 0
+    },
+    {
+      "file": "index.html",
+      "images": 4,
+      "radio_inputs": 0
+    },
+    {
+      "file": "integrated.html",
+      "images": 7,
+      "radio_inputs": 0
+    },
+    {
+      "file": "joint-check.html",
+      "images": 1,
+      "radio_inputs": 20
+    },
+    {
+      "file": "media.html",
+      "images": 12,
+      "radio_inputs": 0
+    },
+    {
+      "file": "medicines.html",
+      "images": 10,
+      "radio_inputs": 0
+    },
+    {
+      "file": "messenger.html",
+      "images": 2,
+      "radio_inputs": 0
+    },
+    {
+      "file": "msat.html",
+      "images": 3,
+      "radio_inputs": 0
+    },
+    {
+      "file": "nerve.html",
+      "images": 2,
+      "radio_inputs": 0
+    },
+    {
+      "file": "pharmacopuncture.html",
+      "images": 2,
+      "radio_inputs": 0
+    },
+    {
+      "file": "phone.html",
+      "images": 2,
+      "radio_inputs": 0
+    },
+    {
+      "file": "posture.html",
+      "images": 8,
+      "radio_inputs": 0
+    },
+    {
+      "file": "roots.html",
+      "images": 18,
+      "radio_inputs": 0
+    },
+    {
+      "file": "spine-check.html",
+      "images": 1,
+      "radio_inputs": 20
+    },
+    {
+      "file": "touch.html",
+      "images": 1,
+      "radio_inputs": 0
+    },
+    {
+      "file": "treatment-cases.html",
+      "images": 5,
+      "radio_inputs": 0
+    },
+    {
+      "file": "values.html",
+      "images": 2,
+      "radio_inputs": 0
+    },
+    {
+      "file": "welcome.html",
+      "images": 1,
+      "radio_inputs": 0
+    }
+  ]
+}
