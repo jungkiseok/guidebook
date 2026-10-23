@@ -207,11 +207,11 @@ for idx,page in enumerate(pages):
  nav+=(f'<a href="{prev["slug"]}.html"><small>← 이전 주제</small>{prev["title"]}</a>' if prev else '<span></span>')
  nav+=(f'<a href="{nxt["slug"]}.html"><small>다음 주제 →</small>{nxt["title"]}</a>' if nxt else '<a href="index.html"><small>처음으로 →</small>자생 소개</a>')+'</nav>'
  doc=f'''<!doctype html>
-<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#002575"><title>{page['title']} · 자생 가이드북</title><link rel="stylesheet" href="styles.css"><script src="common.js" defer></script></head>
+<html lang="ko"><head><meta charset="utf-8"><script src="auth.js"></script><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#002575"><title>{page['title']} · 자생 가이드북</title><link rel="stylesheet" href="styles.css"><script src="common.js" defer></script></head>
 <body><a class="skip-link" href="#main">본문 바로가기</a>
 <header class="mobile-bar"><a href="index.html">자생 가이드북</a><button id="menu-open" aria-controls="sidebar" aria-expanded="false">☰ 목차</button></header>
 <div class="overlay" hidden></div><aside id="sidebar" class="sidebar" aria-label="가이드 목차"><div class="brand"><a href="index.html" aria-label="자생 소개로 이동"><img src="assets/logo.svg" width="234" height="55" alt="자생한방병원"></a><span>입사자 가이드</span><button id="menu-close" aria-label="목차 닫기">닫기 ×</button></div><nav class="menu-scroll" aria-label="주제별 목차">{menu}</nav></aside>
-<div class="content-shell"><div class="reading-tools"><span>자생 가이드북</span></div><main id="main" tabindex="-1"><div class="breadcrumb">{groups[page['g']-1]} <span aria-hidden="true">›</span> {page['title']}</div><h1>{page['title']}</h1><p class="lead">{page['lead']}</p>{toc}<article>{body}</article>{nav}</main></div></body></html>'''
+<div class="content-shell"><div class="reading-tools"><span>자생 가이드북</span><button type="button" class="logout-button">로그아웃</button></div><main id="main" tabindex="-1"><div class="breadcrumb">{groups[page['g']-1]} <span aria-hidden="true">›</span> {page['title']}</div><h1>{page['title']}</h1><p class="lead">{page['lead']}</p>{toc}<article>{body}</article>{nav}</main></div></body></html>'''
  Path(page['slug']+'.html').write_text(doc,encoding='utf-8')
 Path('tmp/pages.json').write_text(json.dumps(pages,ensure_ascii=False),encoding='utf-8')
 print('Generated',len(pages),'pages')

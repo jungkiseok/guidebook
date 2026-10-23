@@ -1,7 +1,7 @@
 from pathlib import Path
 from html.parser import HTMLParser
 import zipfile
-files=list(Path('.').glob('*.html'))+[Path('styles.css'),Path('common.js'),Path('작업완료보고.md')]
+files=list(Path('.').glob('*.html'))+[Path('styles.css'),Path('common.js'),Path('auth.js'),Path('login.js'),Path('작업완료보고.md')]
 class P(HTMLParser):
  def handle_starttag(self,t,a):
   if t=='img':
